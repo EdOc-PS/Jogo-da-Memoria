@@ -4,6 +4,7 @@ body {
     align-self: center;
     background: #F6FDC3;
     min-height: 100vh;
+    user-select: none;
 
 }
 
@@ -32,11 +33,11 @@ button {
 }
 
 .game {
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
+    width: 480px;
+    height: 480px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     transform-style: preserve-3d;
 }
@@ -51,4 +52,23 @@ button {
     background-color: white;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 3em;
+    transform: rotateY(180deg);
+    transition: all .25s;
+}
+.itens::after{
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #404040;
+    transition: all .3s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.itens.boxOpen{
+    transform: rotateY(0deg);
+}
+.boxOpen::after, .boxMatch::after{
+    transform: rotateY(180deg);
 }
