@@ -1,40 +1,8 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background: #F6FDC3;
-    min-height: 100vh;
-    user-select: none;
 
-}
-
-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    border-radius: 10px;
-    background: #CDFAD5;
-    padding: 5rem 5rem;
-}
-
-button {
-    border: none;
-    text-transform: uppercase;
-    background-color: white;
-    border-radius: 10px;
-    padding: 1rem 1rem;
-    font-size: 20px;
-    font-weight: 4500;
-    cursor: pointer;
-    width: 100%;
-}
 
 .game {
-    width: 480px;
-    height: 480px;
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,8 +12,8 @@ button {
 
 .itens {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +29,8 @@ button {
     content: "";
     position: absolute;
     inset: 0;
-    background: #404040;
+    background: #34314B;
+    border: none;
     transition: all .3s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
